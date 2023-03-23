@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>IAT-339 P03</title>
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+      rel="stylesheet"
     />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="swiper/swiper-bundle.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+    <link href="https://use.typekit.net/vkt6nof.css" rel="stylesheet" />
   </head>
   <header class="container-fluid bg-white">
     <nav class="row">
@@ -19,10 +20,22 @@
           <a class="nav-link" href="index.html">Yenan Huang</a>
         </li>
       </ul>
-      <ul class="col nav justify-content-center">
+
+      <ul class="col nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/iero525/IAT-339_P3"
+            >GitHub Link</a
+          >
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="style-guide.html">Style Guide</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projects">Projects</a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
@@ -30,76 +43,84 @@
     </nav>
   </header>
   <body>
-    <main>
-      <section id="intro" class="pt-5 wow fadeIn snap" data-wow-duration="2s">
-        <div class="intro">
-          <h1 class="display-1">Yenan Huang</h1>
-          <h1 class="display-5">UI / UX Designer</h1>
-          <h1 class="display-5">
-            Third Year Student at Simon Fraser University
-          </h1>
-        </div>
-        <a
-          class="icon-link homepage-down wow fadeInDown"
-          href="#project-1"
-          data-wow-delay="0.5s"
-          data-wow-duration="1.5s"
-        >
-          <img src="img/down-arrow-backup-2-svgrepo-com.svg" alt="down arrow" />
-        </a>
-      </section>
+    <section
+      id="intro"
+      class="pt-5 wow fadeIn"
+      data-wow-delay="1s"
+      data-wow-duration="2s"
+    >
+      <div class="intro">
+        <h1 class="display-1">Yenan Huang</h1>
+        <h1 class="display-5">UI / UX Designer</h1>
+        <h1 class="display-5">Third Year Student at Simon Fraser University</h1>
+      </div>
+      <a
+        class="icon-link homepage-down wow fadeInDown"
+        href="#projects"
+        data-wow-delay="0.5s"
+        data-wow-duration="1.5s"
+      >
+        <img src="img/down-arrow-backup-2-svgrepo-com.svg" alt="down arrow" />
+      </a>
+    </section>
 
-      <section id="project-1" class="p-5 bg-primary text-white snap">
-        <div class="row">
-          <div
-            class="col sub-title wow bounceInLeft mx-auto"
-            data-wow-duration="1.5s"
-          >
-            <h1>Review Section</h1>
-            <h5>New Uber Eats Feature Design</h5>
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <a href="uber.html" class="link-intext">View Project</a>
-          </div>
-          <div class="col wow bounceInRight" data-wow-duration="1.5s">
-            <a href="uber.html">
-              <img
-                class="img-fluid img-bw"
-                src="img/uber.png"
-                alt="Review Feature"
-              />
-            </a>
+    <div id="projects" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col">
+              <h1>SFU Equipment Booking Portal Redesign</h1>
+              <h5>Website Evaluation & Redesign</h5>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <a href="sfu.html" class="link-intext-b">View Project</a>
+            </div>
+            <div class="col">
+              <a href="sfu.html">
+                <img
+                  class="img-bw"
+                  src="img/booking.png"
+                  alt="Booking Portal"
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section id="project-2" class="p-5 snap">
-        <div class="row">
-          <div
-            class="col sub-title wow bounceInLeft mx-auto"
-            data-wow-duration="1.5s"
-          >
-            <h1>SFU Equipment Booking Portal Redesign</h1>
-            <h5>Website Evaluation & Redesign</h5>
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <a href="sfu.html" class="link-intext-b">View Project</a>
-          </div>
-          <div class="col wow bounceInRight" data-wow-duration="1.5s">
-            <a href="sfu.html">
-              <img
-                class="img-fluid img-bw"
-                src="img/booking.png"
-                alt="Booking Portal"
-              />
-            </a>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col">
+              <h1>Review Section</h1>
+              <h5>New Uber Eats Feature Design</h5>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <a href="uber.html" class="link-intext-b">View Project</a>
+            </div>
+            <div class="col">
+              <a href="uber.html">
+                <img class="img-bw" src="img/uber.png" alt="Review Feature" />
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <script src="swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
