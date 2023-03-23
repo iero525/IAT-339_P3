@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+section {
+  height: 100vh;
+}
+
+.intro {
+  margin: 0 auto;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+.icon-link {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.homepage-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 17vh;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.icon-link img {
+  max-width: 3rem;
+}
+
+.icon-link:hover,
+.icon-link:active,
+.icon-link:focus {
+  scale: 1.25;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+  transition: 0.3s;
+}
+
+.row {
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  z-index: 0;
+}
+
+a {
+  z-index: 1;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.link-intext {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.link-intext:hover,
+.link-intext:focus,
+.link-intext:active {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.link-intext-b {
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.link-intext-b:hover,
+.link-intext-b:focus,
+.link-intext-b:active {
+  color: black;
+  letter-spacing: 0.1rem;
+}
+
+.about {
+  padding-left: 10vw;
+  padding-top: 20vh;
+}
+
+.details {
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.details h5 {
+  padding-top: 10vh;
+  text-align: right;
+}
+
+.img-bw {
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.img-bw:hover,
+.img-bw:active,
+.img-bw:focus {
+  filter: grayscale(0.1);
+}
+
+.snap {
+  scroll-snap-align: start;
+}
