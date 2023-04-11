@@ -49,7 +49,7 @@
         </div>
         <a
           class="icon-link homepage-down wow fadeInDown"
-          href="#style-guide-1"
+          href="#style-guide"
           data-wow-delay="0.5s"
           data-wow-duration="1.5s"
         >
@@ -57,128 +57,111 @@
         </a>
       </section>
 
-      <section id="style-guide-1" class="p-5 bg-primary text-white">
-        <div class="row">
-          <div class="col sub-title wow bounceInLeft mx-auto">
-            <h1>Interactive Elements</h1>
+      <section id="style-guide" class="p-5 bg-primary text-white">
+        <h1>Interactive Elements</h1>
+        <div class="d-flex flex-row flex-wrap wow bounceInRight pb-5">
+          <div id="intext_link" class="border border-light p-3 m-3">
+            <h3>In-text link</h3>
+            <h5>CSS selector:</h5>
+            <p>.link-intext</p>
+            <h5>Sample code:</h5>
+            <p class="code">
+              &lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;
+            </p>
+            <h5>Rendered element:</h5>
+            <a class="link-intext" href="#">In-text link</a>
           </div>
-          <div class="col wow bounceInRight">
 
-            <div class="d-flex flex-row flex-wrap">
-              <div id="intext_link" class="border border-light p-3 m-3">
-                <h3>In-text link</h3>
-                <h5>CSS selector:</h5>
-                <p>.link-intext</p>
-                <h5>Sample code:</h5>
-                <p class="code">
-                  &lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;
-                </p>
-                <h5>Rendered element:</h5>
-                <a class="link-intext" href="#">In-text link</a>
-              </div>
+          <div id="buttons" class="border border-light p-3 m-3">
+            <h3>Buttons</h3>
+            <h5>CSS selector:</h5>
+            <p>.btn .btn-outline-light</p>
+            <h5>Sample code:</h5>
+            <p class="code">
+              &lt;button class="btn btn-outline-light"&gt;Button&lt;/button&gt;
+            </p>
+            <h5>Rendered element:</h5>
+            <button class="btn btn-outline-light">Button</button>
+          </div>
 
-              <div id="buttons" class="border border-light p-3 m-3">
-                <h3>Buttons</h3>
-                <h5>CSS selector:</h5>
-                <p>.btn .btn-outline-light</p>
-                <h5>Sample code:</h5>
-                <p class="code">
-                  &lt;button class="btn
-                  btn-outline-light"&gt;Button&lt;/button&gt;
-                </p>
-                <h5>Rendered element:</h5>
-                <button class="btn btn-outline-light">Button</button>
-              </div>
+          <div id="link_nav" class="border border-light p-3 m-3">
+            <h3>Navigation Link</h3>
+            <h5>CSS selector:</h5>
+            <p>.nav-link</p>
+            <h5>Sample code:</h5>
+            <p class="code">
+              &lt;a href="#" class="nav-link"&gt;Navigation Link&lt;/a&gt;
+            </p>
+            <h5>Rendered element:</h5>
+            <a class="nav-link text-white" href="#">Navigation Link</a>
+          </div>
 
-              <div id="link_nav" class="border border-light p-3 m-3">
-                <h3>Navigation Link</h3>
-                <h5>CSS selector:</h5>
-                <p>.nav-link</p>
-                <h5>Sample code:</h5>
-                <p class="code">
-                  &lt;a href="#" class="nav-link"&gt;Navigation Link&lt;/a&gt;
-                </p>
-                <h5>Rendered element:</h5>
-                <a class="nav-link text-white" href="#">Navigation Link</a>
-              </div>
-
-              <div id="icon_nav" class="border border-light p-3 m-3">
-                <h3>Image as Link</h3>
-                <h5>CSS selector:</h5>
-                <p>.icon-link</p>
-                <h5>Sample code:</h5>
-                <p class="code">&lt;a class="icon-link" href="#"&gt;</p>
-                <p class="code">&lt;img src="img/" alt="Image as Link"&gt;</p>
-                <p class="code">&lt;/a&gt;</p>
-                <h5>Rendered element:</h5>
-                <a class="icon-link" href="#">
-                  <img
-                    src="img/magnifying-glass-backup-svgrepo-com.svg"
-                    alt="down arrow"
-                  />
-                </a>
-              </div>
-            </div>
+          <div id="icon_nav" class="border border-light p-3 m-3">
+            <h3>Image as Link</h3>
+            <h5>CSS selector:</h5>
+            <p>.icon-link</p>
+            <h5>Sample code:</h5>
+            <p class="code">&lt;a class="icon-link" href="#"&gt;</p>
+            <p class="code">&lt;img src="img/" alt="Image as Link"&gt;</p>
+            <p class="code">&lt;/a&gt;</p>
+            <h5>Rendered element:</h5>
+            <a class="icon-link" href="#">
+              <img
+                src="img/magnifying-glass-backup-svgrepo-com.svg"
+                alt="down arrow"
+              />
+            </a>
           </div>
         </div>
-      </section>
-
-      <section id="style-guide-2" class="p-5">
-        <div class="row">
-          <div class="col sub-title wow bounceInLeft mx-auto">
-            <h1>Text Elements</h1>
+        <h1>Text Elements</h1>
+        <div class="d-flex flex-row flex-wrap wow bounceInRight">
+          <div id="headings" class="border border-light p-3 m-3">
+            <h3>Headings</h3>
+            <h5>CSS selector:</h5>
+            <p>h1 / h2 / h3 / h4 / h5 / h6</p>
+            <h5>Sample code:</h5>
+            <p class="code">&lt;h1&gt;H1 Heading&lt;/h1&gt;</p>
+            <h5>Rendered element:</h5>
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
           </div>
-          <div class="col wow bounceInRight">
-            <div class="d-flex flex-row flex-wrap">
-              <div id="headings" class="border border-dark p-3 m-3">
-                <h3>Headings</h3>
-                <h5>CSS selector:</h5>
-                <p>h1 / h2 / h3 / h4 / h5 / h6</p>
-                <h5>Sample code:</h5>
-                <p class="code">&lt;h1&gt;H1 Heading&lt;/h1&gt;</p>
-                <h5>Rendered element:</h5>
-                <h1>H1 Heading</h1>
-                <h2>H2 Heading</h2>
-                <h3>H3 Heading</h3>
-                <h4>H4 Heading</h4>
-                <h5>H5 Heading</h5>
-                <h6>H6 Heading</h6>
-              </div>
 
-              <div id="font" class="border border-dark p-3 m-3">
-                <h3>Font: Raleway</h3>
-                <h5>Samples</h5>
-                <h1>H1 Heading</h1>
-                <h3>H3 Heading</h3>
-                <h5>H5 Heading</h5>
+          <div id="font" class="border border-light p-3 m-3">
+            <h3>Font: Raleway</h3>
+            <h5>Samples</h5>
+            <h1>H1 Heading</h1>
+            <h3>H3 Heading</h3>
+            <h5>H5 Heading</h5>
 
-                <p>
-                  Access and use via
-                  <a
-                    href="https://fonts.adobe.com/fonts/raleway"
-                    class="link-intext-b"
-                    >Raleway | Adobe Fonts</a
-                  >
-                </p>
-              </div>
+            <p>
+              Access and use via
+              <a
+                href="https://fonts.adobe.com/fonts/raleway"
+                class="link-intext"
+                >Raleway | Adobe Fonts</a
+              >
+            </p>
+          </div>
 
-              <div id="paragraphs" class="border border-dark p-3 m-3">
-                <h3>Paragraphs</h3>
-                <h5>CSS selector:</h5>
-                <p>p</p>
-                <h5>Sample code:</h5>
-                <p class="code">&lt;hp&gt;Paragraphs&lt;/p&gt;</p>
-                <h5>Rendered element:</h5>
-                <p>
-                  The boy walked down the street in a carefree way, playing
-                  without notice of what was about him. He didn't hear the sound
-                  of the car as his ball careened into the road. He took a step
-                  toward it, and in doing so sealed his fate. She looked at her
-                  student wondering if she could ever get through. "You need to
-                  learn to think for yourself," she wanted to tell him.
-                </p>
-              </div>
-            </div>
+          <div id="paragraphs" class="border border-light p-3 m-3">
+            <h3>Paragraphs</h3>
+            <h5>CSS selector:</h5>
+            <p>p</p>
+            <h5>Sample code:</h5>
+            <p class="code">&lt;hp&gt;Paragraphs&lt;/p&gt;</p>
+            <h5>Rendered element:</h5>
+            <p>
+              The boy walked down the street in a carefree way, playing without
+              notice of what was about him. He didn't hear the sound of the car
+              as his ball careened into the road. He took a step toward it, and
+              in doing so sealed his fate. She looked at her student wondering
+              if she could ever get through. "You need to learn to think for
+              yourself," she wanted to tell him.
+            </p>
           </div>
         </div>
       </section>
