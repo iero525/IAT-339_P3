@@ -188,15 +188,15 @@ a {
 }
 
 .swiper-slide img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 40vw;
+  max-height: 40vw;
   object-fit: scale-down;
 }
 
 @media (max-width: 160rem) { 
   .swiper-slide img {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 30vh;
+    max-height: 30vh;
     object-fit: scale-down;
   }
 }
