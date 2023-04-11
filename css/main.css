@@ -33,7 +33,7 @@ p {
 @media (max-width: 35rem) {
   p {
     max-width: 45rem;
-    max-height: 12rem;
+    max-height: 15rem;
     overflow: scroll;
   }
 }
