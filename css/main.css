@@ -193,7 +193,7 @@ a {
   object-fit: scale-down;
 }
 
-@media (max-width: 160rem) { 
+@media (max-width: 160rem) {
   .swiper-slide img {
     max-width: 30vh;
     max-height: 30vh;
@@ -222,7 +222,7 @@ a {
   scale: 1.25;
 }
 
-#desktop{
+#desktop {
   visibility: visible;
 }
 
@@ -236,4 +236,29 @@ a {
   #mobile {
     display: none;
   }
+}
+
+.alert {
+  margin-top: 20vh;
+  transition: 0.3s;
+}
+
+@media (max-width: 35rem) {
+  .alert {
+    display: none;
+  }
+}
+
+.alert:hover,
+.alert:active,
+.alert:focus {
+  scale: 1.15;
+}
+
+.alert img {
+  max-width: 3rem;
+}
+
+.alert p {
+  margin: 0;
 }
