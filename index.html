@@ -72,15 +72,20 @@ Animate.css (https://animate.style/)-->
     <div id="projects" class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="row">
-            <div class="col">
-              <h1>SFU Equipment Booking Portal Redesign</h1>
+          <div class="d-flex flex-row flex-wrap align-items-center p-1">
+            <div class="mx-auto">
+              <h1>
+                SFU Equipment Booking <br />
+                Portal Redesign
+              </h1>
               <h5>Website Evaluation & Redesign</h5>
-              <h1>&nbsp;</h1>
-              <h1>&nbsp;</h1>
+              <div class="gap">
+                <h1>&nbsp;</h1>
+                <h1>&nbsp;</h1>
+              </div>
               <a href="sfu.html" class="link-intext-b">View Project</a>
             </div>
-            <div class="col">
+            <div class="mx-auto">
               <a href="sfu.html">
                 <img
                   class="img-bw"
@@ -93,15 +98,17 @@ Animate.css (https://animate.style/)-->
         </div>
 
         <div class="swiper-slide">
-          <div class="row">
-            <div class="col">
+          <div class="d-flex flex-row flex-wrap align-items-center">
+            <div class="mx-auto">
               <h1>Review Section</h1>
               <h5>New Uber Eats Feature Design</h5>
-              <h1>&nbsp;</h1>
-              <h1>&nbsp;</h1>
+              <div class="gap">
+                <h1>&nbsp;</h1>
+                <h1>&nbsp;</h1>
+              </div>
               <a href="uber.html" class="link-intext-b">View Project</a>
             </div>
-            <div class="col">
+            <div class="mx-auto">
               <a href="uber.html">
                 <img class="img-bw" src="img/uber.png" alt="Review Feature" />
               </a>
@@ -109,6 +116,9 @@ Animate.css (https://animate.style/)-->
           </div>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
     <script src="js/wow.min.js"></script>
     <script>
@@ -117,15 +127,34 @@ Animate.css (https://animate.style/)-->
     <script src="swiper/swiper-bundle.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 30,
-        mousewheel: true,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
+          type: "fraction",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
+    <footer>
+      <nav class="row">
+        <ul class="col nav nav-pills justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/iero525/IAT-339_P3"
+              >GitHub Link</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="style-guide.html">Style Guide</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
