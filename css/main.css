@@ -87,7 +87,7 @@ p {
 .icon-link:hover,
 .icon-link:active,
 .icon-link:focus {
-  scale: 1.25;
+  transform: scale(1.25);
 }
 
 .nav-link:hover,
@@ -219,7 +219,7 @@ a {
 .swiper-button-prev:hover,
 .swiper-button-prev:active,
 .swiper-button-prev:focus {
-  scale: 1.25;
+  transform: scale(1.25);
 }
 
 #desktop {
@@ -252,7 +252,7 @@ a {
 .alert:hover,
 .alert:active,
 .alert:focus {
-  scale: 1.15;
+  transform: scale(1.15);
 }
 
 .alert img {
